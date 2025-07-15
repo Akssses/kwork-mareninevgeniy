@@ -1,5 +1,7 @@
 import React from "react";
 import s from "./Statistics.module.scss";
+import { FaArrowTrendUp } from "react-icons/fa6";
+import { FaArrowTrendDown } from "react-icons/fa6";
 
 export default function Statistics() {
   const statisticsData = [
@@ -59,7 +61,8 @@ export default function Statistics() {
                   item.isPositive ? s.positive : s.negative
                 }`}
               >
-                {item.change}% {item.isPositive ? "↗" : "↘"}
+                {item.change}%{" "}
+                {item.isPositive ? <FaArrowTrendUp /> : <FaArrowTrendDown />}
               </div>
               <span className={s.period}>{item.period}</span>
             </div>
