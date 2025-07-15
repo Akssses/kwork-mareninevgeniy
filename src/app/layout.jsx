@@ -30,6 +30,7 @@ export default function RootLayout({ children }) {
           <Navbar />
         </main>
         <div className="circles">
+          <img className="ellipse" src="/assets/images/ellipse.svg" alt="" />
           <img className="circle1" src="/assets/images/circle1.png" alt="" />
           <img className="circle2" src="/assets/images/circle2.png" alt="" />
           <img className="circle3" src="/assets/images/circle3.png" alt="" />
