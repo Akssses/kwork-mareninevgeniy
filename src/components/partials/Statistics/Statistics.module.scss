@@ -1,0 +1,108 @@
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.slider {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
+.card {
+  min-width: 160px;
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 2px dashed #e5e5ea;
+}
+
+.iconContainer {
+  width: 34px;
+  height: 34px;
+  background: #fef2e2a7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.infoHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #1a1a1a;
+}
+
+.cardTitle {
+  font-size: 12px;
+  font-weight: 500;
+  color: #8e8e93;
+}
+
+.amount {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #ffffff;
+  border-radius: 8px;
+  width: fit-content;
+}
+
+.change {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  &.positive {
+    color: #16a34a;
+  }
+
+  &.negative {
+    color: #dc2626;
+  }
+}
+
+.period {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}

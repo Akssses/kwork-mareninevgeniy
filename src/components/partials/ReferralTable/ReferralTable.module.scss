@@ -1,0 +1,153 @@
+.section {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.navigation {
+  display: flex;
+  gap: 8px;
+}
+
+.navButton {
+  width: 30px;
+  height: 30px;
+  background: #e0e0e0;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    color: #666;
+  }
+
+  &:hover {
+    background: #d0d0d0;
+    transform: scale(1.05);
+  }
+}
+
+.divider {
+  height: 1px;
+  background: none;
+  border-style: dashed;
+  border-width: 1px 0 0 0;
+  border-color: #d1d5db;
+  margin: 24px 0;
+}
+
+.tableContainer {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.card {
+  flex: 0 0 auto;
+  min-width: 100px;
+  background: #f3f4f6;
+  border-radius: 16px;
+  text-align: center;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 140px;
+  overflow: hidden;
+
+  .level {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding: 10px 0;
+    color: #ffffff;
+    background: linear-gradient(180deg, #a09898 0%, #dcd9d9 100%);
+  }
+
+  .layoutIcons {
+    width: 30px;
+    margin: auto;
+  }
+
+  .percentage {
+    font-size: 14px;
+    font-weight: 700;
+    color: #9ca3af;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amount {
+    margin-top: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    background: linear-gradient(180deg, #a09898 0%, #dcd9d9 100%);
+    padding: 10px 0;
+  }
+}
+
+.active {
+  background: linear-gradient(180deg, #ffeac2 0%, #fff7eb 100%);
+  border-color: #f59e0b;
+
+  .level {
+    color: #ffffff;
+    background: linear-gradient(180deg, #ff9500 0%, #ffd08d 100%);
+  }
+
+  .percentage {
+    color: #000;
+  }
+
+  .amount {
+    color: #ffffff;
+    background: linear-gradient(180deg, #ff9500 0%, #ffd08d 100%);
+  }
+}
+
+.lockIcon {
+  font-size: 20px;
+}
+
+.connector {
+  width: 8px;
+  height: 2px;
+  align-self: center;
+  background: #f59e0b;
+  border-radius: 1px;
+  flex-shrink: 0;
+}

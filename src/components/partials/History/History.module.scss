@@ -1,0 +1,64 @@
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.item {
+  background: #fafafae7;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    .name {
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .time {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+}
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.userAmount {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .amount {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .level {
+    font-size: 14px;
+    color: #666;
+  }
+}
